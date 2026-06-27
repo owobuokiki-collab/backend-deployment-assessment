@@ -1,0 +1,298 @@
+2026-06-27T09:24:33.973Z [INFO]  Terraform version: 1.11.4
+2026-06-27T09:24:33.975Z [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2026-06-27T09:24:33.975Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2026-06-27T09:24:33.975Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2026-06-27T09:24:33.975Z [DEBUG] using github.com/zclconf/go-cty v1.16.0
+2026-06-27T09:24:33.975Z [INFO]  Go runtime version: go1.23.3
+2026-06-27T09:24:33.975Z [INFO]  CLI args: []string{"terraform", "plan"}
+2026-06-27T09:24:33.975Z [DEBUG] Attempting to open CLI config file: /home/vagrant/.terraformrc
+2026-06-27T09:24:33.975Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-06-27T09:24:33.976Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-06-27T09:24:33.976Z [DEBUG] ignoring non-existing provider search directory /home/vagrant/.terraform.d/plugins
+2026-06-27T09:24:33.976Z [DEBUG] ignoring non-existing provider search directory /home/vagrant/.local/share/terraform/plugins
+2026-06-27T09:24:33.976Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-06-27T09:24:33.976Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-06-27T09:24:33.976Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-06-27T09:24:33.977Z [INFO]  CLI command args: []string{"plan"}
+2026-06-27T09:24:45.490Z [DEBUG] checking for provisioner in "."
+2026-06-27T09:24:45.495Z [DEBUG] checking for provisioner in "/usr/local/bin"
+2026-06-27T09:24:45.506Z [INFO]  backend/local: starting Plan operation
+2026-06-27T09:24:45.545Z [DEBUG] created provider logger: level=debug
+2026-06-27T09:24:45.545Z [INFO]  provider: configuring client automatic mTLS
+2026-06-27T09:24:45.581Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5"]
+2026-06-27T09:24:45.582Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 pid=6451
+2026-06-27T09:24:45.582Z [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5
+2026-06-27T09:24:45.893Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Starting github.com/hashicorp/terraform-provider-aws@5.100.0 (go1.23.10)...
+2026-06-27T09:24:45.893Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Initializing Terraform AWS Provider...
+2026-06-27T09:24:46.104Z [INFO]  provider.terraform-provider-aws_v5.100.0_x5: configuring server automatic mTLS: timestamp=2026-06-27T09:24:46.099Z
+2026-06-27T09:24:46.153Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: plugin address: address=/tmp/plugin3235329666 network=unix timestamp=2026-06-27T09:24:46.153Z
+2026-06-27T09:24:46.154Z [DEBUG] provider: using plugin: version=5
+2026-06-27T09:24:49.246Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-06-27T09:24:49.263Z [ERROR] provider: error encountered while scanning stdout: error="read |0: file already closed"
+2026-06-27T09:24:49.263Z [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 id=6451
+2026-06-27T09:24:49.271Z [DEBUG] provider: plugin exited
+2026-06-27T09:24:49.279Z [DEBUG] Building and walking validate graph
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_security_group.bastion_sg" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_private_subnet_2_association" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_subnet.public_subnet_2" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_public_subnet_1_association" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_instance.backend_server" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_lb.startuptech_alb" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_vpc.startuptech_vpc" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_nat_gateway.startuptech_nat_gateway" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_instance.mongodb_server" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_route_table.private_route_table" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_eip_association.bastion_eip_assoc" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_lb_target_group_attachment.backend_attachment" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_lb_listener.http_listener" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_internet_gateway.startuptech_igw" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_eip.bastion_eip" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_eip.nat_eip" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_security_group.alb_sg" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "data.aws_ami.amazon_linux" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_private_subnet_1_association" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_security_group.mongodb_sg" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_public_subnet_2_association" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_security_group.backend_sg" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_subnet.private_subnet_2" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_subnet.public_subnet_1" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_lb_target_group.backend_tg" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_instance.bastion_host" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_subnet.private_subnet_1" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.295Z [DEBUG] ProviderTransformer: "aws_route_table.public_route_table" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_public_subnet_1_association" references: [aws_route_table.public_route_table aws_subnet.public_subnet_1]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_security_group.bastion_sg" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_instance.backend_server" references: [aws_subnet.private_subnet_1 var.instance_type data.aws_ami.amazon_linux aws_security_group.backend_sg]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "output.backend_private_ip (expand)" references: [aws_instance.backend_server]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "output.mongodb_private_ip (expand)" references: [aws_instance.mongodb_server]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_instance.bastion_host" references: [aws_subnet.public_subnet_1 var.instance_type data.aws_ami.amazon_linux aws_security_group.bastion_sg]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_vpc.startuptech_vpc" references: []
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_subnet.private_subnet_1" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2026-06-27T09:24:49.297Z [DEBUG] ReferenceTransformer: "aws_internet_gateway.startuptech_igw" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_subnet.private_subnet_2" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_eip.bastion_eip" references: []
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_nat_gateway.startuptech_nat_gateway" references: [aws_internet_gateway.startuptech_igw aws_eip.nat_eip aws_subnet.public_subnet_1]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "var.instance_type" references: []
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_lb_target_group_attachment.backend_attachment" references: [aws_lb_target_group.backend_tg aws_instance.backend_server]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_route_table.public_route_table" references: [aws_vpc.startuptech_vpc aws_internet_gateway.startuptech_igw]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_private_subnet_2_association" references: [aws_route_table.private_route_table aws_subnet.private_subnet_2]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_instance.mongodb_server" references: [data.aws_ami.amazon_linux aws_security_group.mongodb_sg aws_subnet.private_subnet_2 var.instance_type]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_public_subnet_2_association" references: [aws_route_table.public_route_table aws_subnet.public_subnet_2]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "data.aws_ami.amazon_linux" references: []
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: [var.aws_region]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_subnet.public_subnet_2" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_lb_listener.http_listener" references: [aws_lb.startuptech_alb aws_lb_target_group.backend_tg]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_eip.nat_eip" references: [aws_internet_gateway.startuptech_igw]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_security_group.alb_sg" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "output.bastion_public_ip (expand)" references: [aws_eip.bastion_eip]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_subnet.public_subnet_1" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_private_subnet_1_association" references: [aws_subnet.private_subnet_1 aws_route_table.private_route_table]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_lb.startuptech_alb" references: [aws_security_group.alb_sg aws_subnet.public_subnet_1 aws_subnet.public_subnet_2]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_route_table.private_route_table" references: [aws_vpc.startuptech_vpc aws_nat_gateway.startuptech_nat_gateway]
+2026-06-27T09:24:49.298Z [DEBUG] ReferenceTransformer: "aws_eip_association.bastion_eip_assoc" references: [aws_instance.bastion_host aws_eip.bastion_eip]
+2026-06-27T09:24:49.299Z [DEBUG] ReferenceTransformer: "aws_lb_target_group.backend_tg" references: [aws_vpc.startuptech_vpc]
+2026-06-27T09:24:49.299Z [DEBUG] ReferenceTransformer: "aws_security_group.backend_sg" references: [aws_vpc.startuptech_vpc aws_security_group.alb_sg aws_security_group.bastion_sg]
+2026-06-27T09:24:49.299Z [DEBUG] ReferenceTransformer: "aws_security_group.mongodb_sg" references: [aws_vpc.startuptech_vpc aws_security_group.backend_sg]
+2026-06-27T09:24:49.299Z [DEBUG] ReferenceTransformer: "var.my_ip" references: []
+2026-06-27T09:24:49.299Z [DEBUG] ReferenceTransformer: "output.alb_dns_name (expand)" references: [aws_lb.startuptech_alb]
+2026-06-27T09:24:49.304Z [DEBUG] Starting graph walk: walkValidate
+2026-06-27T09:24:49.316Z [DEBUG] created provider logger: level=debug
+2026-06-27T09:24:49.316Z [INFO]  provider: configuring client automatic mTLS
+2026-06-27T09:24:49.325Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5"]
+2026-06-27T09:24:49.326Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 pid=6462
+2026-06-27T09:24:49.327Z [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5
+2026-06-27T09:24:49.612Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Starting github.com/hashicorp/terraform-provider-aws@5.100.0 (go1.23.10)...
+2026-06-27T09:24:49.613Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Initializing Terraform AWS Provider...
+2026-06-27T09:24:49.725Z [INFO]  provider.terraform-provider-aws_v5.100.0_x5: configuring server automatic mTLS: timestamp=2026-06-27T09:24:49.723Z
+2026-06-27T09:24:49.756Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: plugin address: address=/tmp/plugin583415285 network=unix timestamp=2026-06-27T09:24:49.755Z
+2026-06-27T09:24:49.756Z [DEBUG] provider: using plugin: version=5
+2026-06-27T09:24:50.114Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-06-27T09:24:50.126Z [ERROR] provider: error encountered while scanning stdout: error="read |0: file already closed"
+2026-06-27T09:24:50.126Z [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 id=6462
+2026-06-27T09:24:50.130Z [DEBUG] provider: plugin exited
+2026-06-27T09:24:50.131Z [INFO]  backend/local: plan calling Plan
+2026-06-27T09:24:50.136Z [DEBUG] Building and walking plan graph for NormalMode
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_route_table.public_route_table (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_eip.nat_eip (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_subnet.private_subnet_2 (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_vpc.startuptech_vpc (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_lb_target_group.backend_tg (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_security_group.alb_sg (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "data.aws_ami.amazon_linux (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_security_group.bastion_sg (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_instance.bastion_host (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_public_subnet_2_association (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_subnet.private_subnet_1 (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_lb_target_group_attachment.backend_attachment (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_lb_listener.http_listener (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_instance.backend_server (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_eip.bastion_eip (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_eip_association.bastion_eip_assoc (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_route_table.private_route_table (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_internet_gateway.startuptech_igw (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_public_subnet_1_association (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_nat_gateway.startuptech_nat_gateway (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_security_group.mongodb_sg (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_security_group.backend_sg (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.142Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_private_subnet_1_association (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.143Z [DEBUG] ProviderTransformer: "aws_subnet.public_subnet_2 (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.143Z [DEBUG] ProviderTransformer: "aws_instance.mongodb_server (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.143Z [DEBUG] ProviderTransformer: "aws_subnet.public_subnet_1 (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.143Z [DEBUG] ProviderTransformer: "aws_route_table_association.startuptech_private_subnet_2_association (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.143Z [DEBUG] ProviderTransformer: "aws_lb.startuptech_alb (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-06-27T09:24:50.143Z [DEBUG] ReferenceTransformer: "aws_eip.bastion_eip (expand)" references: []
+2026-06-27T09:24:50.143Z [DEBUG] ReferenceTransformer: "aws_subnet.public_subnet_1 (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.143Z [DEBUG] ReferenceTransformer: "aws_subnet.private_subnet_2 (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_security_group.mongodb_sg (expand)" references: [aws_vpc.startuptech_vpc (expand) aws_security_group.backend_sg (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "output.bastion_public_ip (expand)" references: [aws_eip.bastion_eip (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_vpc.startuptech_vpc (expand)" references: []
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "var.my_ip" references: []
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: [var.aws_region]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_eip_association.bastion_eip_assoc (expand)" references: [aws_eip.bastion_eip (expand) aws_instance.bastion_host (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_route_table.private_route_table (expand)" references: [aws_vpc.startuptech_vpc (expand) aws_nat_gateway.startuptech_nat_gateway (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_lb_target_group.backend_tg (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_route_table.public_route_table (expand)" references: [aws_vpc.startuptech_vpc (expand) aws_internet_gateway.startuptech_igw (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_private_subnet_2_association (expand)" references: [aws_subnet.private_subnet_2 (expand) aws_route_table.private_route_table (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "output.alb_dns_name (expand)" references: [aws_lb.startuptech_alb (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_lb_target_group_attachment.backend_attachment (expand)" references: [aws_lb_target_group.backend_tg (expand) aws_instance.backend_server (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "aws_lb_listener.http_listener (expand)" references: [aws_lb.startuptech_alb (expand) aws_lb_target_group.backend_tg (expand)]
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "var.instance_type" references: []
+2026-06-27T09:24:50.144Z [DEBUG] ReferenceTransformer: "output.mongodb_private_ip (expand)" references: [aws_instance.mongodb_server (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_eip.nat_eip (expand)" references: [aws_internet_gateway.startuptech_igw (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_security_group.alb_sg (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_internet_gateway.startuptech_igw (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_private_subnet_1_association (expand)" references: [aws_subnet.private_subnet_1 (expand) aws_route_table.private_route_table (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_subnet.public_subnet_2 (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_subnet.private_subnet_1 (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_public_subnet_1_association (expand)" references: [aws_route_table.public_route_table (expand) aws_subnet.public_subnet_1 (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_nat_gateway.startuptech_nat_gateway (expand)" references: [aws_internet_gateway.startuptech_igw (expand) aws_subnet.public_subnet_1 (expand) aws_eip.nat_eip (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "data.aws_ami.amazon_linux (expand)" references: []
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "output.backend_private_ip (expand)" references: [aws_instance.backend_server (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_instance.mongodb_server (expand)" references: [aws_subnet.private_subnet_2 (expand) var.instance_type data.aws_ami.amazon_linux (expand) aws_security_group.mongodb_sg (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_security_group.bastion_sg (expand)" references: [aws_vpc.startuptech_vpc (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_lb.startuptech_alb (expand)" references: [aws_subnet.public_subnet_1 (expand) aws_subnet.public_subnet_2 (expand) aws_security_group.alb_sg (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_instance.bastion_host (expand)" references: [aws_subnet.public_subnet_1 (expand) aws_security_group.bastion_sg (expand) var.instance_type data.aws_ami.amazon_linux (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_security_group.backend_sg (expand)" references: [aws_vpc.startuptech_vpc (expand) aws_security_group.alb_sg (expand) aws_security_group.bastion_sg (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_route_table_association.startuptech_public_subnet_2_association (expand)" references: [aws_route_table.public_route_table (expand) aws_subnet.public_subnet_2 (expand)]
+2026-06-27T09:24:50.145Z [DEBUG] ReferenceTransformer: "aws_instance.backend_server (expand)" references: [aws_security_group.backend_sg (expand) var.instance_type data.aws_ami.amazon_linux (expand) aws_subnet.private_subnet_1 (expand)]
+2026-06-27T09:24:50.149Z [DEBUG] Starting graph walk: walkPlan
+2026-06-27T09:24:50.150Z [DEBUG] created provider logger: level=debug
+2026-06-27T09:24:50.150Z [INFO]  provider: configuring client automatic mTLS
+2026-06-27T09:24:50.161Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5"]
+2026-06-27T09:24:50.162Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 pid=6469
+2026-06-27T09:24:50.162Z [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5
+2026-06-27T09:24:50.434Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Starting github.com/hashicorp/terraform-provider-aws@5.100.0 (go1.23.10)...
+2026-06-27T09:24:50.436Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Initializing Terraform AWS Provider...
+2026-06-27T09:24:50.562Z [INFO]  provider.terraform-provider-aws_v5.100.0_x5: configuring server automatic mTLS: timestamp=2026-06-27T09:24:50.562Z
+2026-06-27T09:24:50.581Z [DEBUG] provider: using plugin: version=5
+2026-06-27T09:24:50.582Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: plugin address: address=/tmp/plugin1887311193 network=unix timestamp=2026-06-27T09:24:50.581Z
+2026-06-27T09:24:50.869Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Configuring Terraform AWS Provider: tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:144 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp=2026-06-27T09:24:50.839Z
+2026-06-27T09:24:50.873Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Resolving credentials provider: @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp=2026-06-27T09:24:50.873Z
+2026-06-27T09:24:50.875Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Using profile: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 @module=aws.aws-base tf_aws.profile=default tf_rpc=ConfigureProvider tf_aws.profile.source=envvar tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2026-06-27T09:24:50.875Z
+2026-06-27T09:24:50.875Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Loading configuration: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef tf_rpc=ConfigureProvider @module=aws.aws-base timestamp=2026-06-27T09:24:50.875Z
+2026-06-27T09:24:50.879Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Retrieving credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef timestamp=2026-06-27T09:24:50.878Z
+2026-06-27T09:24:50.879Z [INFO]  provider.terraform-provider-aws_v5.100.0_x5: Retrieved credentials: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /home/vagrant/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp=2026-06-27T09:24:50.878Z
+2026-06-27T09:24:50.879Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Loading configuration: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2026-06-27T09:24:50.879Z
+2026-06-27T09:24:50.880Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Creating AWS SDK v1 session: @module=aws tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:168 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2026-06-27T09:24:50.879Z
+2026-06-27T09:24:50.880Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Retrieving AWS account details: @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:183 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef tf_rpc=ConfigureProvider @module=aws tf_mux_provider="*schema.GRPCProviderServer" timestamp=2026-06-27T09:24:50.880Z
+2026-06-27T09:24:50.882Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: Retrieving caller identity from STS: tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2026-06-27T09:24:50.882Z
+2026-06-27T09:24:50.898Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Request Sent:
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/5.100.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.36.3 ua/2.1 os/linux lang/go#1.23.10 md/GOOS#linux md/GOARCH#amd64 api/sts#1.33.20 m/n" net.peer.name=sts.us-east-1.amazonaws.com rpc.service=STS tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef aws.region=us-east-1 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260627T092450Z http.request_content_length=43 rpc.system=aws-api tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 @module=aws.aws-base http.method=POST http.request.header.amz_sdk_invocation_id=20668773-8b78-4ab4-834d-c7d2c96e5fe7 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************Q7HW/20260627/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.url=https://sts.us-east-1.amazonaws.com/ rpc.method=GetCallerIdentity timestamp=2026-06-27T09:24:50.884Z
+2026-06-27T09:24:53.066Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Response Received:
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::163841615330:user/Kiki_Altschool</Arn>
+  |     <UserId>AIDA*************GNPH</UserId>
+  |     <Account>163841615330</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>56d287bd-38db-4fa7-a453-d0d63a4a392b</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response.header.content_type=text/xml http.response.header.date="Sat, 27 Jun 2026 09:33:00 GMT" http.status_code=200 rpc.service=STS tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ConfigureProvider http.response.header.x_amzn_requestid=56d287bd-38db-4fa7-a453-d0d63a4a392b rpc.method=GetCallerIdentity tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" aws.region=us-east-1 http.duration=2165 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzgyNTUyNzgwMzk1OlI6cTBhRDlQTTM= http.response_content_length=411 rpc.system=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef @module=aws.aws-base @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:47 timestamp=2026-06-27T09:24:53.063Z
+2026-06-27T09:24:53.066Z [INFO]  provider.terraform-provider-aws_v5.100.0_x5: Retrieved caller identity from STS: tf_req_id=308577a8-5bee-7c65-6c29-83a5616383ef tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2026-06-27T09:24:53.064Z
+2026-06-27T09:24:53.119Z [DEBUG] ReferenceTransformer: "aws_vpc.startuptech_vpc" references: []
+2026-06-27T09:24:53.121Z [DEBUG] ReferenceTransformer: "data.aws_ami.amazon_linux" references: []
+2026-06-27T09:24:53.122Z [DEBUG] ReferenceTransformer: "aws_eip.bastion_eip" references: []
+[0m[1maws_eip.bastion_eip: Refreshing state... [id=eipalloc-06ee7dc406b26fd33][0m
+[0m[1maws_vpc.startuptech_vpc: Refreshing state... [id=vpc-0379d5b7fea50130f][0m
+[0m[1mdata.aws_ami.amazon_linux: Reading...[0m[0m
+2026-06-27T09:24:53.208Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: [DEBUG] Waiting for state to become: [success]
+2026-06-27T09:24:53.208Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: [DEBUG] Waiting for state to become: [success]
+2026-06-27T09:24:53.215Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Request Sent: http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************Q7HW/20260627/us-east-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****"
+  http.request.body=
+  | Action=DescribeVpcs&Version=2016-11-15&VpcId.1=vpc-0379d5b7fea50130f
+   rpc.method=DescribeVpcs rpc.system=aws-api http.request.header.x_amz_date=20260627T092453Z tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws rpc.service=EC2 http.request.header.amz_sdk_request="attempt=1; max=25" http.request_content_length=68 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 http.request.header.content_type=application/x-www-form-urlencoded tf_rpc=ReadResource @module=aws http.method=POST http.request.header.amz_sdk_invocation_id=c7811233-d420-481b-a53c-50174faeda4d tf_req_id=5086915e-4504-afb1-e1bb-3e22376f94d3 aws.region=us-east-1 http.url=https://ec2.us-east-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/5.100.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.36.3 ua/2.1 os/linux lang/go#1.23.10 md/GOOS#linux md/GOARCH#amd64 api/ec2#1.224.1 m/C,n" net.peer.name=ec2.us-east-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_vpc timestamp=2026-06-27T09:24:53.214Z
+2026-06-27T09:24:53.218Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Request Sent: rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 http.request.header.amz_sdk_invocation_id=716b0b3c-31ad-48d5-88b7-e3f778c0fcda http.request_content_length=85 rpc.method=DescribeAddresses rpc.service=EC2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_eip
+  http.request.body=
+  | Action=DescribeAddresses&AllocationId.1=eipalloc-06ee7dc406b26fd33&Version=2016-11-15
+   http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************Q7HW/20260627/us-east-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.url=https://ec2.us-east-1.amazonaws.com/ tf_rpc=ReadResource tf_req_id=232ccf4d-e8bb-f35d-af4f-b9d445099203 aws.region=us-east-1 http.request.header.x_amz_date=20260627T092453Z tf_mux_provider="*schema.GRPCProviderServer" http.method=POST http.request.header.content_type=application/x-www-form-urlencoded http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/5.100.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.36.3 ua/2.1 os/linux lang/go#1.23.10 md/GOOS#linux md/GOARCH#amd64 api/ec2#1.224.1 m/n" net.peer.name=ec2.us-east-1.amazonaws.com @module=aws timestamp=2026-06-27T09:24:53.216Z
+2026-06-27T09:24:53.221Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Request Sent: http.request.header.amz_sdk_invocation_id=affd6a88-66d5-45f5-8955-e715b68e5939 http.url=https://ec2.us-east-1.amazonaws.com/ rpc.method=DescribeImages rpc.system=aws-api @module=aws tf_rpc=ReadDataSource http.request.header.content_type=application/x-www-form-urlencoded tf_data_source_type=aws_ami tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws http.request.header.amz_sdk_request="attempt=1; max=25" http.request_content_length=199 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/5.100.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.36.3 ua/2.1 os/linux lang/go#1.23.10 md/GOOS#linux md/GOARCH#amd64 api/ec2#1.224.1 m/C,n" net.peer.name=ec2.us-east-1.amazonaws.com aws.region=us-east-1 http.method=POST rpc.service=EC2 tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45
+  http.request.body=
+  | Action=DescribeImages&Filter.1.Name=name&Filter.1.Value.1=amzn2-ami-hvm-%2A-x86_64-gp2&Filter.2.Name=virtualization-type&Filter.2.Value.1=hvm&IncludeDeprecated=false&Owner.1=amazon&Version=2016-11-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************Q7HW/20260627/us-east-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20260627T092453Z tf_aws.sdk=aws-sdk-go-v2 tf_req_id=fd43b2a3-10f3-b78c-df67-09a5eb3220e3 timestamp=2026-06-27T09:24:53.220Z
+2026-06-27T09:24:54.715Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Response Received: http.response.header.x_amzn_requestid=0fe732f7-e735-498e-80df-83928520a3ef rpc.service=EC2 http.duration=1488 http.response.header.date="Sat, 27 Jun 2026 09:33:02 GMT" http.response.header.vary=accept-encoding rpc.system=aws-api tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" @module=aws http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.status_code=401 tf_aws.sdk=aws-sdk-go-v2 tf_resource_type=aws_eip tf_rpc=ReadResource
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Response><Errors><Error><Code>AuthFailure</Code><Message>AWS was not able to validate the provided access credentials</Message></Error></Errors><RequestID>0fe732f7-e735-498e-80df-83928520a3ef</RequestID></Response>
+   http.response.header.cache_control="no-cache, no-store" http.response.header.server=AmazonEC2 aws.region=us-east-1 rpc.method=DescribeAddresses tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=232ccf4d-e8bb-f35d-af4f-b9d445099203 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 timestamp=2026-06-27T09:24:54.709Z
+2026-06-27T09:24:54.715Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: request failed with unretryable error https response error StatusCode: 401, RequestID: 0fe732f7-e735-498e-80df-83928520a3ef, api error AuthFailure: AWS was not able to validate the provided access credentials: rpc.method=DescribeAddresses tf_aws.sdk=aws-sdk-go-v2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 aws.region=us-east-1 rpc.service=EC2 rpc.system=aws-api tf_resource_type=aws_eip tf_rpc=ReadResource tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=232ccf4d-e8bb-f35d-af4f-b9d445099203 timestamp=2026-06-27T09:24:54.712Z
+2026-06-27T09:24:54.715Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Response Received: tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" @module=aws http.response.header.date="Sat, 27 Jun 2026 09:33:02 GMT" http.response.header.vary=accept-encoding rpc.system=aws-api tf_rpc=ReadResource http.duration=1488 http.response.header.cache_control="no-cache, no-store" http.response.header.server=AmazonEC2 http.status_code=401 rpc.service=EC2 http.response.header.content_type=text/xml;charset=UTF-8 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_vpc tf_aws.sdk=aws-sdk-go-v2 tf_req_id=5086915e-4504-afb1-e1bb-3e22376f94d3 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 aws.region=us-east-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Response><Errors><Error><Code>AuthFailure</Code><Message>AWS was not able to validate the provided access credentials</Message></Error></Errors><RequestID>36a54013-b2ed-433f-a07a-707960d31032</RequestID></Response>
+   http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.response.header.x_amzn_requestid=36a54013-b2ed-433f-a07a-707960d31032 rpc.method=DescribeVpcs timestamp=2026-06-27T09:24:54.714Z
+2026-06-27T09:24:54.718Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: request failed with unretryable error https response error StatusCode: 401, RequestID: 36a54013-b2ed-433f-a07a-707960d31032, api error AuthFailure: AWS was not able to validate the provided access credentials: aws.region=us-east-1 tf_aws.sdk=aws-sdk-go-v2 rpc.method=DescribeVpcs rpc.system=aws-api rpc.service=EC2 tf_req_id=5086915e-4504-afb1-e1bb-3e22376f94d3 tf_rpc=ReadResource @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_vpc timestamp=2026-06-27T09:24:54.716Z
+2026-06-27T09:24:54.730Z [ERROR] provider.terraform-provider-aws_v5.100.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.26.0/tfprotov5/internal/diag/diagnostics.go:58 @module=sdk.proto diagnostic_detail="" diagnostic_severity=ERROR diagnostic_summary="reading EC2 EIP (eipalloc-06ee7dc406b26fd33): operation error EC2: DescribeAddresses, https response error StatusCode: 401, RequestID: 0fe732f7-e735-498e-80df-83928520a3ef, api error AuthFailure: AWS was not able to validate the provided access credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=232ccf4d-e8bb-f35d-af4f-b9d445099203 tf_proto_version=5.8 tf_resource_type=aws_eip tf_rpc=ReadResource timestamp=2026-06-27T09:24:54.725Z
+2026-06-27T09:24:54.730Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: HTTP Response Received: http.response.header.server=AmazonEC2 http.response.header.x_amzn_requestid=03e45f1b-e6ed-4692-af55-4d0ce537af8e http.status_code=401 tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" http.duration=1498
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Response><Errors><Error><Code>AuthFailure</Code><Message>AWS was not able to validate the provided access credentials</Message></Error></Errors><RequestID>03e45f1b-e6ed-4692-af55-4d0ce537af8e</RequestID></Response>
+   tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=fd43b2a3-10f3-b78c-df67-09a5eb3220e3 tf_rpc=ReadDataSource http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" rpc.method=DescribeImages aws.region=us-east-1 http.response.header.cache_control="no-cache, no-store" http.response.header.date="Sat, 27 Jun 2026 09:33:02 GMT" http.response.header.vary=accept-encoding rpc.system=aws-api tf_data_source_type=aws_ami @module=aws http.response.header.content_type=text/xml;charset=UTF-8 rpc.service=EC2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 timestamp=2026-06-27T09:24:54.724Z
+2026-06-27T09:24:54.732Z [DEBUG] provider.terraform-provider-aws_v5.100.0_x5: request failed with unretryable error https response error StatusCode: 401, RequestID: 03e45f1b-e6ed-4692-af55-4d0ce537af8e, api error AuthFailure: AWS was not able to validate the provided access credentials: tf_data_source_type=aws_ami tf_mux_provider="*schema.GRPCProviderServer" @module=aws aws.region=us-east-1 rpc.method=DescribeImages rpc.service=EC2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:45 rpc.system=aws-api tf_req_id=fd43b2a3-10f3-b78c-df67-09a5eb3220e3 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ReadDataSource timestamp=2026-06-27T09:24:54.730Z
+2026-06-27T09:24:54.734Z [ERROR] provider.terraform-provider-aws_v5.100.0_x5: Response contains error diagnostic: tf_data_source_type=aws_ami tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=fd43b2a3-10f3-b78c-df67-09a5eb3220e3 @caller=github.com/hashicorp/terraform-plugin-go@v0.26.0/tfprotov5/internal/diag/diagnostics.go:58 @module=sdk.proto tf_rpc=ReadDataSource diagnostic_detail="" diagnostic_severity=ERROR diagnostic_summary="reading EC2 AMIs: operation error EC2: DescribeImages, https response error StatusCode: 401, RequestID: 03e45f1b-e6ed-4692-af55-4d0ce537af8e, api error AuthFailure: AWS was not able to validate the provided access credentials" tf_proto_version=5.8 timestamp=2026-06-27T09:24:54.733Z
+2026-06-27T09:24:54.735Z [ERROR] provider.terraform-provider-aws_v5.100.0_x5: Response contains error diagnostic: tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-go@v0.26.0/tfprotov5/internal/diag/diagnostics.go:58 diagnostic_detail="" diagnostic_summary="reading EC2 VPC (vpc-0379d5b7fea50130f): operation error EC2: DescribeVpcs, https response error StatusCode: 401, RequestID: 36a54013-b2ed-433f-a07a-707960d31032, api error AuthFailure: AWS was not able to validate the provided access credentials" tf_proto_version=5.8 tf_req_id=5086915e-4504-afb1-e1bb-3e22376f94d3 @module=sdk.proto diagnostic_severity=ERROR tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_vpc timestamp=2026-06-27T09:24:54.735Z
+2026-06-27T09:24:54.736Z [ERROR] vertex "aws_vpc.startuptech_vpc" error: reading EC2 VPC (vpc-0379d5b7fea50130f): operation error EC2: DescribeVpcs, https response error StatusCode: 401, RequestID: 36a54013-b2ed-433f-a07a-707960d31032, api error AuthFailure: AWS was not able to validate the provided access credentials
+2026-06-27T09:24:54.736Z [ERROR] vertex "data.aws_ami.amazon_linux" error: reading EC2 AMIs: operation error EC2: DescribeImages, https response error StatusCode: 401, RequestID: 03e45f1b-e6ed-4692-af55-4d0ce537af8e, api error AuthFailure: AWS was not able to validate the provided access credentials
+2026-06-27T09:24:54.736Z [ERROR] vertex "data.aws_ami.amazon_linux (expand)" error: reading EC2 AMIs: operation error EC2: DescribeImages, https response error StatusCode: 401, RequestID: 03e45f1b-e6ed-4692-af55-4d0ce537af8e, api error AuthFailure: AWS was not able to validate the provided access credentials
+2026-06-27T09:24:54.736Z [ERROR] vertex "aws_eip.bastion_eip" error: reading EC2 EIP (eipalloc-06ee7dc406b26fd33): operation error EC2: DescribeAddresses, https response error StatusCode: 401, RequestID: 0fe732f7-e735-498e-80df-83928520a3ef, api error AuthFailure: AWS was not able to validate the provided access credentials
+2026-06-27T09:24:54.736Z [ERROR] vertex "aws_eip.bastion_eip (expand)" error: reading EC2 EIP (eipalloc-06ee7dc406b26fd33): operation error EC2: DescribeAddresses, https response error StatusCode: 401, RequestID: 0fe732f7-e735-498e-80df-83928520a3ef, api error AuthFailure: AWS was not able to validate the provided access credentials
+2026-06-27T09:24:54.736Z [ERROR] vertex "aws_vpc.startuptech_vpc (expand)" error: reading EC2 VPC (vpc-0379d5b7fea50130f): operation error EC2: DescribeVpcs, https response error StatusCode: 401, RequestID: 36a54013-b2ed-433f-a07a-707960d31032, api error AuthFailure: AWS was not able to validate the provided access credentials
+2026-06-27T09:24:54.741Z [WARN]  Planning encountered errors, so plan is not applyable
+2026-06-27T09:24:54.766Z [INFO]  backend/local: plan operation completed
+
+[0m[1m[31mPlanning failed.[0m[1m Terraform encountered an error while generating this plan.[0m
+
+[0m[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mreading EC2 VPC (vpc-0379d5b7fea50130f): operation error EC2: DescribeVpcs, https response error StatusCode: 401, RequestID: 36a54013-b2ed-433f-a07a-707960d31032, api error AuthFailure: AWS was not able to validate the provided access credentials[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with aws_vpc.startuptech_vpc,
+[31m│[0m [0m  on main.tf line 15, in resource "aws_vpc" "startuptech_vpc":
+[31m│[0m [0m  15: resource "aws_vpc" "startuptech_vpc" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mreading EC2 AMIs: operation error EC2: DescribeImages, https response error StatusCode: 401, RequestID: 03e45f1b-e6ed-4692-af55-4d0ce537af8e, api error AuthFailure: AWS was not able to validate the provided access credentials[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with data.aws_ami.amazon_linux,
+[31m│[0m [0m  on main.tf line 26, in data "aws_ami" "amazon_linux":
+[31m│[0m [0m  26: data "aws_ami" "amazon_linux" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mreading EC2 EIP (eipalloc-06ee7dc406b26fd33): operation error EC2: DescribeAddresses, https response error StatusCode: 401, RequestID: 0fe732f7-e735-498e-80df-83928520a3ef, api error AuthFailure: AWS was not able to validate the provided access credentials[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with aws_eip.bastion_eip,
+[31m│[0m [0m  on main.tf line 298, in resource "aws_eip" "bastion_eip":
+[31m│[0m [0m 298: resource "aws_eip" "bastion_eip" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+2026-06-27T09:24:55.141Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-06-27T09:24:55.162Z [ERROR] provider: error encountered while scanning stdout: error="read |0: file already closed"
+2026-06-27T09:24:55.162Z [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 id=6469
+2026-06-27T09:24:55.166Z [DEBUG] provider: plugin exited
