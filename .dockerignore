@@ -1,0 +1,16 @@
+.git
+.gitignore
+
+terraform
+evidence
+
+README.md
+
+docker-compose.yml
+
+.env
+.env.example
+
+bin
+
+*.log
